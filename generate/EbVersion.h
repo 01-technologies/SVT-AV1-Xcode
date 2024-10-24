@@ -1,1 +1,1 @@
-#define SVT_AV1_CVS_VERSION "v0.8.7"
+#define SVT_AV1_CVS_VERSION "v2.2.1"
