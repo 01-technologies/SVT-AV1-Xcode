@@ -21,10 +21,10 @@ let package = Package(
             name: "svt-av1",
             dependencies: [],
             path: ".",
-            exclude: ["SVT-AV1/Source/Lib/Common/ASM_AVX2", "SVT-AV1/Source/Lib/Common/ASM_AVX512", "SVT-AV1/Source/Lib/Common/ASM_SSE2", "SVT-AV1/Source/Lib/Common/ASM_SSE4_1", "SVT-AV1/Source/Lib/Common/ASM_SSSE3", "SVT-AV1/Source/Lib/Encoder/ASM_AVX2", "SVT-AV1/Source/Lib/Encoder/ASM_AVX512", "SVT-AV1/Source/Lib/Encoder/ASM_SSE2", "SVT-AV1/Source/Lib/Encoder/ASM_SSE4_1", "SVT-AV1/Source/Lib/Encoder/ASM_SSSE3"],
+            exclude: ["SVT-AV1/Source/Lib/ASM_AVX2", "SVT-AV1/Source/Lib/ASM_AVX512", "SVT-AV1/Source/Lib/ASM_SSE2", "SVT-AV1/Source/Lib/ASM_SSE4_1", "SVT-AV1/Source/Lib/ASM_SSSE3"],
             sources: ["SVT-AV1/Source/API", "SVT-AV1/Source/Lib", "SVT-AV1/third_party/fastfeat", "generate"],
             publicHeadersPath: "include",
-            cSettings: [.headerSearchPath("generate"), .headerSearchPath("SVT-AV1/Source/API"), .headerSearchPath("SVT-AV1/Source/Lib/Common/Codec"), .headerSearchPath("SVT-AV1/Source/Lib/Common/C_DEFAULT"), .headerSearchPath("SVT-AV1/Source/Lib/Encoder/Codec"), .headerSearchPath("SVT-AV1/Source/Lib/Encoder/Globals"), .headerSearchPath("SVT-AV1/Source/Lib/Encoder/C_DEFAULT"), .headerSearchPath("SVT-AV1/third_party/fastfeat")]
+            cSettings: [.headerSearchPath("generate"), .headerSearchPath("SVT-AV1/Source/API"), .headerSearchPath("SVT-AV1/Source/Lib/Codec"), .headerSearchPath("SVT-AV1/Source/Lib/C_DEFAULT"), .headerSearchPath("SVT-AV1/Source/Lib/Globals"), .headerSearchPath("SVT-AV1/third_party/fastfeat")]
         )
     ],
     cLanguageStandard: .gnu11,
