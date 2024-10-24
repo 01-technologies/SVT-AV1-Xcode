@@ -33,7 +33,7 @@ The Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder) is an AV1-co
 
   s.source_files = "SVT-AV1/Source/API/**/*.{h,c,cc,cpp}", "SVT-AV1/Source/Lib/**/*.{h,c,cc,cpp}", "SVT-AV1/third_party/fastfeat/**/*.{h,c,cc,cpp}", "generate/**/*.{h,c,cc,cpp}"
   s.public_header_files = "SVT-AV1/Source/API/*.h"
-  s.exclude_files = "SVT-AV1/Source/Lib/Common/ASM_AVX2", "SVT-AV1/Source/Lib/Common/ASM_AVX512", "SVT-AV1/Source/Lib/Common/ASM_SSE2", "SVT-AV1/Source/Lib/Common/ASM_SSE4_1", "SVT-AV1/Source/Lib/Common/ASM_SSSE3", "SVT-AV1/Source/Lib/Encoder/ASM_AVX2", "SVT-AV1/Source/Lib/Encoder/ASM_AVX512", "SVT-AV1/Source/Lib/Encoder/ASM_SSE2", "SVT-AV1/Source/Lib/Encoder/ASM_SSE4_1", "SVT-AV1/Source/Lib/Encoder/ASM_SSSE3"
+  s.exclude_files = "SVT-AV1/Source/Lib/ASM_AVX2", "SVT-AV1/Source/Lib/ASM_AVX512", "SVT-AV1/Source/Lib/ASM_SSE2", "SVT-AV1/Source/Lib/ASM_SSE4_1", "SVT-AV1/Source/Lib/ASM_SSSE3", "SVT-AV1/Source/Lib/ASM_AVX2", "SVT-AV1/Source/Lib/ASM_AVX512", "SVT-AV1/Source/Lib/ASM_SSE2", "SVT-AV1/Source/Lib/ASM_SSE4_1", "SVT-AV1/Source/Lib/ASM_SSSE3"
 
   s.pod_target_xcconfig = {
     'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/svt-av1/SVT-AV1/third_party/fastfeat ${PODS_TARGET_SRCROOT}/SVT-AV1/third_party/fastfeat ${PODS_ROOT}/svt-av1/generate ${PODS_TARGET_SRCROOT}/generate',
